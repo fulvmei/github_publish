@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "github_publish"
+include ':app'
+include ':lib1'
+include ':lib2'
+
+def rootDir = file(".")
+if (!gradle.ext.has('projectSettingsDir')) {
+    gradle.ext.projectSettingsDir = rootDir.getCanonicalPath()
+}

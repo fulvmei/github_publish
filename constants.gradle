@@ -1,0 +1,10 @@
+project.ext {
+    //Release
+    releaseVersion = '0.1.0-alpha01'
+    releaseVersionCode = 1
+
+    //Project
+    compileSdkVersion = 33
+    minSdkVersion = 21
+    targetSdkVersion = 33
+}
